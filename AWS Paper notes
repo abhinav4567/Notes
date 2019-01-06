@@ -1,0 +1,69 @@
+MY NOTES:
+
+Rt53: use CNAME for ELB
+
+Rt53: choose Alias, especially for Apex
+
+Rt53: routing policies - Simple, Weighted, Latency, Failover, Geolocation
+
+S3 durability: 11-9's availability: 4-9's (RRS 4-9's durability, IA 3-9's availability)
+
+S3 0byte-5TB (100MB+ multi-part upload)
+
+S3 eventual consistent: overwrite PUTS & Deletes
+
+S3 versioning & MFA Delete
+
+S3 server encryption: SSE-S3, SSE-KMS, SSE-C
+
+S3 PUT/request headers: Authorization, Expires, Cache-Control, Host, Date, Content-Encoding, Content-Length, Content-Type, Content-MD5, x-amz-content-sha256, x-amz-date, x-amz-security-token, x-amz-storage-class, x-amz-meta-
+
+HTTP 200 Upload Successful
+
+RDS supports - MariaDB, PostgreSQL, MySQL, SQL, Oracle, Aurora
+
+RDS auto backup 5min-35days; suspend IO for minutes
+
+Aurora: 6 copies of data 2*3AZ
+
+RedShift: 1MB block size
+
+SQL Express 10GB
+
+SQL can't increase storage
+
+MySQL port 3306
+
+DynamoDB name+value < 400kb
+
+DynamoDB POST methods: host, content-type, x-amz-date, -target
+
+VPC: Region > VPC > IGW+VPG > Route > AZ > nACL (SL) > Subnet > SG (SF) > EC2
+
+VPC: minimum size of a subnet is a /28 (or 14 IP addresses.)
+
+VPC: 20 EC2 instances by default, can increase
+
+VPC dedicated (can't change) modes: dedicated & host
+
+VPC: AWS reserve first four and last IP addresses in each subnet
+
+NAT: disable source/destination
+
+13 Regions
+
+DIRTMCG
+
+EC2: META DATA: curl http://169.254.169.254/latest/meta-data/
+
+EBS: 1TB max vol size
+
+AMI copy: manual: Launch permissions, S3 permissions, User-defined tags
+
+SQS size: 1kb-256kb, not encrypted
+
+SQS delay 0-15min; wait 0-20sec; visibility timeout: 0-12hrs; retention: 1min - 14 days
+
+SWF: Starters, Deciders, Worker
+
+Web App Firewall: String, IP, Size Constraint, SQL Injection, Cross Site Conditions
